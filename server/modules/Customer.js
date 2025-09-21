@@ -24,7 +24,7 @@ const customerSchema = new mongoose.Schema(
         validator: (value) => {
           return /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/.test(value);
         },
-        message:'Email is not valid.'
+        message: 'Email is not valid.',
       },
     },
     password: {
