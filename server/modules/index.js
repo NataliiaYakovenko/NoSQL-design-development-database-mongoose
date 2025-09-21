@@ -6,3 +6,5 @@ mongoose.connect(DB).catch((error) => {
 });
 
 module.exports.Product = require('./Product');
+module.exports.Order = require('./Order');
+module.exports.Customer = require('./Customer');

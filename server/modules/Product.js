@@ -34,7 +34,7 @@ const productSchema = new mongoose.Schema(
       min: 0,
       validate: {
         validator: Number.isInteger,
-        message: 'Amount must be integer',
+        message: 'Amount must be integer.',
       },
     },
     discount: {
