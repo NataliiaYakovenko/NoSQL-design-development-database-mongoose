@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const router = require("./routes/index");
-const { errorHandler } = require("./errorHandler");
+const { errorHandler,errorMongooseHandler } = require("./middlewares/errorHandler");
 
 const app = express();
 
@@ -11,9 +11,8 @@ app.get("/products/:id", function (req, res, next) {
 });
 
 app.use(express.json());
-
 app.use("/api/", router);
-
 app.use(errorHandler);
+app.use(errorMongooseHandler)
 
 module.exports = app;
