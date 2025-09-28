@@ -22,7 +22,12 @@ module.exports.CUSTOMER_VALIDATION_SCHEMA = yup.object({
     .required('Field email is required'),
   password: yup.string().required('Field password is required'),
   deliveryAddress: yup.string().required('Field delivery address is required'),
-  wishList: yup.array({
-    productId: yup.number().integer().required('Field product id is required'),
-  }),
+  wishList: yup
+    .array()
+    .of(
+      yup.object({
+        productId: yup.string().required('Field product id is required'),
+      })
+    )
+    .default([]),
 });

@@ -1,0 +1,19 @@
+POST http://localhost:5000/api/orders
+Content-Type: application/json
+
+{
+  "customerId": "68d9508e5a55bf75608f3195",
+  "products": [
+    {
+      "productId": "68d91f68cb418cf2fad58812",
+      "amount": 1
+    },
+    {
+      "productId": "68d94393873792ad69f1c941",
+      "amount": 2
+    }
+  ],
+  "totalSumma": 2350,
+  "status": "new",
+  "date": "2025-09-28T10:30:00.000Z"
+}
