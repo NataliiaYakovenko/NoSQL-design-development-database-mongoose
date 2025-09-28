@@ -2,10 +2,10 @@ POST http://localhost:5000/api/customers
 Content-Type: application/json
 
 {
-  "firstName": "Sophia",
-  "lastName": "Lee",
-  "email": "sophia.lee@example.com",
-  "password": "hashedpassword789",
+  "firstName": "Ben",
+  "lastName": "Benson",
+  "email": "ben@example.com",
+  "password": "Benbenson123",
   "deliveryAddress": "78 Orchard Road, Singapore",
   "wishList": [
     {
