@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+const {Schema} = mongoose
+
 const customerSchema = new mongoose.Schema(
   {
     firstName: {

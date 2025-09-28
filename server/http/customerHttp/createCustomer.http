@@ -1,0 +1,21 @@
+POST http://localhost:5000/api/customers
+Content-Type: application/json
+
+{
+  "firstName": "Sophia",
+  "lastName": "Lee",
+  "email": "sophia.lee@example.com",
+  "password": "hashedpassword789",
+  "deliveryAddress": "78 Orchard Road, Singapore",
+  "wishList": [
+    {
+      "productId": "68d91f68cb418cf2fad58812"
+    },
+    {
+      "productId": "68d94361873792ad69f1c93f"
+    },
+    {
+      "productId": "68d94393873792ad69f1c941"
+    }
+  ]
+}
