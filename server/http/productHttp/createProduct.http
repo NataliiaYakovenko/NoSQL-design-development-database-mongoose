@@ -1,11 +1,11 @@
 POST http://localhost:5000/api/products
 Content-Type: application/json
 
-  {
-    "title": "Lenovo X1",
-    "description": "Lightweight business laptop with a 14-inch display, 16GB RAM, and 512GB SSD.",
-    "category": "laptop",
-    "price": 1200,
-    "amount": 15,
-    "discount": 10
-  }
+{
+  "title": "Logitech MX Master 3S",
+  "description": "Wireless ergonomic mouse with programmable buttons and fast charging support.",
+  "category": "accessory",
+  "price": 120,
+  "amount": 50,
+  "discount": 15
+}
