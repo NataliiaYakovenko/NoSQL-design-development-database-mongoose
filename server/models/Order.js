@@ -25,7 +25,7 @@ const orderSchema = new mongoose.Schema(
         },
       },
     ],
-    amountOrder: {
+    amountOrders: {
       type: Number,
       required: true,
       min: 1,

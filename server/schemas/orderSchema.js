@@ -17,7 +17,7 @@ module.exports.ORDER_VALIDATION_SCHEMA = yup.object({
     )
     .required('Field products is required'),
 
-  amountOrder: yup
+  amountOrders: yup
     .number()
     .min(1, 'Amount of order must be at least 1')
     .integer('Amount of order must be integer')
