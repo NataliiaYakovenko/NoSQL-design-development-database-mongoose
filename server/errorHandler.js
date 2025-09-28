@@ -1,4 +1,6 @@
-const {Error: { ValidationError, CastError }} = require('mongoose');
+const {
+  Error: { ValidationError, CastError },
+} = require('mongoose');
 
 module.exports.errorMongooseHandler = async (err, req, res, next) => {
   if (err instanceof ValidationError) {
@@ -10,13 +12,7 @@ module.exports.errorMongooseHandler = async (err, req, res, next) => {
   return res.status(500).send('Unknown error');
 };
 
-
 module.exports.errorHandler = async (err, req, res, next) => {
-
-  console.log('=== ERROR CAUGHT ===');
-  console.log(err);
-  console.log('===================');
-
   if (res.headersSent) {
     return;
   }
