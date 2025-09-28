@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const {Schema} = mongoose
+const { Schema } = mongoose;
 const orderSchema = new mongoose.Schema(
   {
     customerId: {
@@ -25,6 +25,15 @@ const orderSchema = new mongoose.Schema(
         },
       },
     ],
+    amountOrder: {
+      type: Number,
+      required: true,
+      min: 1,
+      validation: {
+        validate: Number.isInteger,
+        message: 'Amount must be in integer',
+      },
+    },
     totalSumma: {
       type: Number,
       required: true,

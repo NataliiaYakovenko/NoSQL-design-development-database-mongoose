@@ -13,6 +13,7 @@ Content-Type: application/json
       "amount": 2
     }
   ],
+  "amountOrder": 1,
   "totalSumma": 2350,
   "status": "new",
   "date": "2025-09-28T10:30:00.000Z"
