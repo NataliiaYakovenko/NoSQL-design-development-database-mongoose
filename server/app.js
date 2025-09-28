@@ -1,6 +1,6 @@
 const express = require("express");
-const cors = require("cors");
 const router = require("./routes/index");
+const cors = require("cors");
 const { errorHandler,errorMongooseHandler } = require("./errorHandler");
 
 const app = express();

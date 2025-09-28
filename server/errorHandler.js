@@ -12,6 +12,11 @@ module.exports.errorMongooseHandler = async (err, req, res, next) => {
 
 
 module.exports.errorHandler = async (err, req, res, next) => {
+
+  console.log('=== ERROR CAUGHT ===');
+  console.log(err);
+  console.log('===================');
+
   if (res.headersSent) {
     return;
   }
