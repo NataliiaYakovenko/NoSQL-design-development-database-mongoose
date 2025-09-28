@@ -1,8 +1,8 @@
 const yup = require('yup');
 
 module.exports.REVIEW_VALIDATION_SCHEMA = yup.object({
-  productId: yup.number().integer().required('Field product id is required'),
-  customerId: yup.number().integer().required('Field customer id is required'),
+  productId: yup.string().required('Field product id is required'),
+  customerId: yup.string().required('Field customer id is required'),
   mark: yup
     .number()
     .min(1, 'Mark cannot be less then 1')
