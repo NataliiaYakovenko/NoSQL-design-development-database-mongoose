@@ -1,6 +1,5 @@
 const bcrypt = require('bcrypt');
 const { Customer } = require('../models');
-const { hashPassword } = require('../middlewares/hashPassword');
 
 module.exports.createCustomer = async (req, res, next) => {
   try {
@@ -20,14 +19,16 @@ module.exports.createCustomer = async (req, res, next) => {
   }
 };
 
-// module.exports.getAllProducts = async (req, res, next) => {
-//   try {
-//     const foundProducts = await Product.find();
-//     if (!foundProducts) {
-//       return res.status(404).send('Products not found');
-//     }
-//     return res.status(200).send({ data: foundProducts });
-//   } catch (error) {
-//     next(error);
-//   }
-// };
+module.exports.getOneCustomer = async (req, res, next) => {
+  try {
+    const { _id } = req;
+
+    const foundCustomer = await Customer.findOne(_id);
+    if (!foundCustomer) {
+      return res.status(404).send('Customer not found');
+    }
+    return res.status(200).send({ data: foundCustomer });
+  } catch (error) {
+    next(error);
+  }
+};
