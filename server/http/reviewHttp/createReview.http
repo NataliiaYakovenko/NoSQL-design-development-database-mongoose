@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
   "productId": "68d94361873792ad69f1c93f",
-  "customerId": "68d94fe85a55bf75608f3190",
+  "customerId": "68d9648fc3cc3122c8b780eb",
   "mark": 9,
   "comment": "Excellent phone, very fast and lightweight.",
   "date": "2025-09-28T12:00:00.000Z"
